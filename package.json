@@ -1,0 +1,21 @@
+{
+  "name": "agentic-sdlc-reference-model",
+  "version": "1.0.0",
+  "description": "Reference model for autonomous AI agents across the SDLC, with the deck, flyer and banner generated as code",
+  "private": true,
+  "scripts": {
+    "deck": "node deck/build.js",
+    "flyer": "node flyer/build.js && node flyer/render.js",
+    "banner": "node banner/build.js && node banner/render.js",
+    "build": "npm run deck && npm run flyer && npm run banner"
+  },
+  "dependencies": {
+    "playwright": "^1.47.0",
+    "pptxgenjs": "^3.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "sharp": "^0.33.5"
+  },
+  "license": "MIT"
+}
